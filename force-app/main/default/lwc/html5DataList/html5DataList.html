@@ -1,0 +1,8 @@
+<template>
+    <input id="input" name="input" list="countries" class="slds-input" type="text" />
+    <datalist id="states">
+        <template for:each={stateOptions} for:item="state">
+            <option key={state.id}>{state.label}</option>
+          </template>
+    </datalist>
+</template>
